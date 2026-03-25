@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap");
 
 :root {
-  --bg: #f4efe6;
-  --bg-strong: #efe0c7;
-  --surface: rgba(255, 250, 242, 0.82);
-  --surface-strong: #fff8ee;
-  --ink: #1c2230;
-  --muted: #5c6475;
-  --line: rgba(28, 34, 48, 0.12);
-  --accent: #cc5a2c;
-  --accent-dark: #8f3415;
-  --accent-soft: #ffd7c8;
-  --highlight: #206a73;
-  --shadow: 0 25px 60px rgba(37, 29, 18, 0.12);
+  --bg: #050c16;
+  --bg-strong: #081526;
+  --surface: rgba(7, 20, 35, 0.8);
+  --surface-strong: rgba(11, 28, 48, 0.92);
+  --ink: #eef7ff;
+  --muted: #9db1c9;
+  --line: rgba(123, 213, 255, 0.18);
+  --line-strong: rgba(123, 213, 255, 0.3);
+  --accent: #f1c40f;
+  --accent-dark: #b98a00;
+  --accent-soft: rgba(241, 196, 15, 0.14);
+  --highlight: #77d9ff;
+  --highlight-strong: #2eb7e6;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
   --radius-xl: 28px;
   --radius-lg: 20px;
   --radius-md: 14px;
@@ -33,9 +35,23 @@ body {
   color: var(--ink);
   font-family: "Manrope", "Segoe UI", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(255, 216, 167, 0.8), transparent 32%),
-    radial-gradient(circle at top right, rgba(77, 153, 161, 0.22), transparent 28%),
-    linear-gradient(180deg, #f9f3e7 0%, #f4efe6 50%, #efe7da 100%);
+    radial-gradient(circle at top left, rgba(46, 183, 230, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(119, 217, 255, 0.1), transparent 32%),
+    radial-gradient(circle at 50% 120%, rgba(241, 196, 15, 0.08), transparent 26%),
+    linear-gradient(180deg, #02060c 0%, #07101b 40%, #091322 100%);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(119, 217, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(119, 217, 255, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 92%);
 }
 
 a {
@@ -57,12 +73,13 @@ a {
   margin-bottom: 2rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 248, 238, 0.7);
+  background: rgba(4, 14, 26, 0.7);
   backdrop-filter: blur(12px);
-  box-shadow: 0 10px 30px rgba(42, 33, 19, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
 }
 
 .site-brand {
+  color: var(--accent);
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.25rem;
   font-weight: 700;
@@ -85,12 +102,12 @@ a {
 .site-nav a:focus-visible,
 .text-link:hover,
 .text-link:focus-visible {
-  color: var(--accent-dark);
+  color: var(--accent);
 }
 
 .hero {
   display: grid;
-  grid-template-columns: 1.35fr 0.9fr;
+  grid-template-columns: 1.25fr 0.95fr;
   gap: 1.5rem;
   align-items: stretch;
 }
@@ -103,15 +120,39 @@ a {
 .resource-card,
 .step-card,
 .note-card {
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
-  background: var(--surface);
-  backdrop-filter: blur(10px);
+  background:
+    linear-gradient(180deg, rgba(8, 27, 46, 0.86), rgba(5, 15, 28, 0.9)),
+    var(--surface);
+  backdrop-filter: blur(12px);
   box-shadow: var(--shadow);
+}
+
+.hero-copy::before,
+.hero-panel::before,
+.content-card::before,
+.project-card::before,
+.project-layout article::before,
+.resource-card::before,
+.step-card::before,
+.note-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, rgba(119, 217, 255, 0.08), transparent 45%),
+    linear-gradient(180deg, transparent, rgba(46, 183, 230, 0.04));
 }
 
 .hero-copy {
   padding: 3rem;
+  background:
+    linear-gradient(135deg, rgba(12, 37, 62, 0.96), rgba(4, 13, 24, 0.98)),
+    var(--surface);
 }
 
 .eyebrow,
@@ -119,7 +160,7 @@ a {
 .panel-label,
 .project-tag {
   margin: 0 0 0.75rem;
-  color: var(--accent-dark);
+  color: var(--highlight);
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -159,8 +200,8 @@ li {
 code {
   padding: 0.15rem 0.45rem;
   border-radius: 999px;
-  background: rgba(32, 106, 115, 0.1);
-  color: var(--ink);
+  background: rgba(119, 217, 255, 0.1);
+  color: var(--highlight);
   font-family: "Manrope", "Segoe UI", sans-serif;
   font-size: 0.95em;
   font-weight: 700;
@@ -196,21 +237,74 @@ code {
 }
 
 .button-primary {
-  color: #fff8f2;
-  background: linear-gradient(135deg, var(--accent), #e27b40);
-  box-shadow: 0 16px 30px rgba(180, 87, 40, 0.22);
+  color: #111822;
+  background: linear-gradient(135deg, #f3cf34, var(--accent));
+  box-shadow: 0 14px 28px rgba(241, 196, 15, 0.2);
 }
 
 .button-secondary {
-  background: rgba(255, 248, 238, 0.6);
+  background: rgba(7, 24, 40, 0.72);
   border: 1px solid var(--line);
+  color: var(--ink);
 }
 
 .hero-panel {
   padding: 2rem;
   background:
-    linear-gradient(180deg, rgba(32, 106, 115, 0.08), rgba(255, 248, 238, 0.8)),
+    linear-gradient(180deg, rgba(6, 24, 43, 0.94), rgba(3, 12, 22, 0.98)),
     var(--surface);
+}
+
+.brand-lockup,
+.intro-inline-art {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-lockup {
+  margin-bottom: 1.25rem;
+}
+
+.brand-logo,
+.inline-logo {
+  flex: 0 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 0 8px rgba(119, 217, 255, 0.04),
+    0 0 40px rgba(46, 183, 230, 0.18);
+}
+
+.brand-logo {
+  width: 92px;
+  height: 92px;
+}
+
+.inline-logo {
+  width: 64px;
+  height: 64px;
+}
+
+.panel-text {
+  margin: 0;
+}
+
+.banner-frame {
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.28);
+}
+
+.banner-art {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.02);
 }
 
 .feature-list {
@@ -241,7 +335,7 @@ code {
 
 .accent-card {
   background:
-    linear-gradient(180deg, rgba(255, 215, 200, 0.55), rgba(255, 250, 242, 0.78)),
+    linear-gradient(180deg, rgba(241, 196, 15, 0.08), rgba(6, 20, 36, 0.95)),
     var(--surface);
 }
 
@@ -269,6 +363,27 @@ code {
 .page-intro {
   max-width: 58rem;
   margin-bottom: 1.5rem;
+}
+
+.inline-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 40px;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(6, 23, 39, 0.78);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 14px rgba(241, 196, 15, 0.7);
 }
 
 .project-layout {
@@ -323,6 +438,12 @@ code {
   .hero-panel,
   .project-layout article {
     padding: 1.5rem;
+  }
+
+  .brand-lockup,
+  .intro-inline-art {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   h1 {
