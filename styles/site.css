@@ -15,9 +15,9 @@
   --highlight: #77d9ff;
   --highlight-strong: #2eb7e6;
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
-  --radius-xl: 28px;
-  --radius-lg: 20px;
-  --radius-md: 14px;
+  --radius-xl: 6px;
+  --radius-lg: 4px;
+  --radius-md: 3px;
   --max-width: 1180px;
 }
 
@@ -72,19 +72,44 @@ a {
   padding: 0.9rem 1.1rem;
   margin-bottom: 2rem;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--radius-lg);
   background: rgba(4, 14, 26, 0.7);
   backdrop-filter: blur(12px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+  position: relative;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 12px auto 12px 12px;
+  width: 22px;
+  border-top: 1px solid var(--line-strong);
+  border-left: 1px solid var(--line-strong);
+  pointer-events: none;
 }
 
 .site-brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
   color: var(--accent);
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.25rem;
-  font-weight: 700;
   text-decoration: none;
+}
+
+.site-brand-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.site-brand-subtitle {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .site-nav {
@@ -148,6 +173,31 @@ a {
     linear-gradient(180deg, transparent, rgba(46, 183, 230, 0.04));
 }
 
+.hero-copy::after,
+.hero-panel::after,
+.content-card::after,
+.project-card::after,
+.project-layout article::after,
+.resource-card::after,
+.step-card::after,
+.note-card::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  pointer-events: none;
+  border: 1px solid rgba(123, 213, 255, 0.08);
+  clip-path: polygon(
+    0 12px,
+    12px 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    12px 100%,
+    0 calc(100% - 12px)
+  );
+}
+
 .hero-copy {
   padding: 3rem;
   background:
@@ -199,7 +249,7 @@ li {
 
 code {
   padding: 0.15rem 0.45rem;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: rgba(119, 217, 255, 0.1);
   color: var(--highlight);
   font-family: "Manrope", "Segoe UI", sans-serif;
@@ -225,10 +275,19 @@ code {
   justify-content: center;
   min-height: 48px;
   padding: 0.8rem 1.3rem;
-  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
   font-weight: 800;
   text-decoration: none;
   transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% 100%,
+    10px 100%,
+    0 calc(100% - 10px)
+  );
 }
 
 .button:hover,
@@ -270,11 +329,21 @@ code {
 .inline-logo {
   flex: 0 0 auto;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow:
     0 0 0 8px rgba(119, 217, 255, 0.04),
     0 0 40px rgba(46, 183, 230, 0.18);
+  clip-path: polygon(
+    0 12px,
+    12px 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    12px 100%,
+    0 calc(100% - 12px)
+  );
 }
 
 .brand-logo {
@@ -294,9 +363,19 @@ code {
 .banner-frame {
   margin-bottom: 1.5rem;
   border: 1px solid var(--line-strong);
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.28);
+  clip-path: polygon(
+    0 18px,
+    18px 0,
+    calc(100% - 18px) 0,
+    100% 18px,
+    100% calc(100% - 18px),
+    calc(100% - 18px) 100%,
+    18px 100%,
+    0 calc(100% - 18px)
+  );
 }
 
 .banner-art {
@@ -372,18 +451,41 @@ code {
   min-height: 40px;
   padding: 0.5rem 0.9rem;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: rgba(6, 23, 39, 0.78);
   color: var(--muted);
   font-weight: 700;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px)
+  );
 }
 
 .status-dot {
   width: 0.65rem;
   height: 0.65rem;
-  border-radius: 50%;
+  border-radius: 1px;
   background: var(--accent);
   box-shadow: 0 0 14px rgba(241, 196, 15, 0.7);
+}
+
+.hero-copy,
+.hero-panel,
+.content-card,
+.project-card,
+.project-layout article,
+.resource-card,
+.step-card,
+.note-card,
+.site-header {
+  background-image:
+    linear-gradient(90deg, transparent calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 47px), transparent calc(100% - 47px)),
+    linear-gradient(180deg, transparent calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 47px), transparent calc(100% - 47px));
+  background-blend-mode: screen;
 }
 
 .project-layout {
@@ -431,7 +533,7 @@ code {
   }
 
   .site-header {
-    border-radius: 28px;
+    border-radius: var(--radius-lg);
   }
 
   .hero-copy,
