@@ -1,12 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex in Flatland</title>
+  <meta
+    name="description"
+    content="Projects, downloads, and build notes from the Alex in Flatland YouTube channel."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/site.css">
+</head>
 <body>
-<h1>Alex in Flatland</h1>
-<p>Like Alice in Wonderland, only better.</p>
-<hr />
-<p>10/05/2025 - In the process of migrating my hosting. Please check back later.</p>
-<hr />
-<p>YouTube Channel - <a href="https://www.youtube.com/alexinflatland">https://www.youtube.com/alexinflatland</a></p>
-<p>Some of the download links may be down. I'm transitioning them to <a href="https://github.com/AlexInFlatland">https://github.com/AlexInFlatland</a>&nbsp;</p>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="site-brand" href="/">Alex in Flatland</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="/projects/">Projects</a>
+        <a href="https://www.youtube.com/@AlexInFlatland">YouTube</a>
+        <a href="https://github.com/AlexInFlatland">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Builds, experiments, and downloads</p>
+          <h1>Every video can have a home base.</h1>
+          <p class="hero-text">
+            This site is the companion to the Alex in Flatland channel: a clean place
+            for project writeups, related files, setup steps, and the links that are
+            hard to fit neatly into a YouTube description.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/projects/">Browse Projects</a>
+            <a class="button button-secondary" href="https://www.youtube.com/@AlexInFlatland">
+              Visit the Channel
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <p class="panel-label">Why this site exists</p>
+          <ul class="feature-list">
+            <li>Dedicated page per video or build</li>
+            <li>Downloads, source files, and reference links</li>
+            <li>Setup instructions that are easy to update later</li>
+            <li>A structure that works well on GitHub Pages</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section-grid" id="about">
+        <article class="content-card">
+          <p class="section-label">Channel</p>
+          <h2>From video to usable project page</h2>
+          <p>
+            Instead of keeping everything inside video descriptions, each project can
+            live here with a short overview, installation steps, part lists, code,
+            downloads, and update notes.
+          </p>
+        </article>
+
+        <article class="content-card accent-card">
+          <p class="section-label">Current status</p>
+          <h2>Hosting migration complete enough to build on</h2>
+          <p>
+            The site now has a stronger front page and a repeatable project-page
+            pattern, so adding the next video project is just a matter of copying one
+            folder and editing the content.
+          </p>
+        </article>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>Start with a hub, then grow one page at a time</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-tag">Hub</p>
+            <h3>Project archive</h3>
+            <p>
+              A single place to list every build, experiment, and downloadable resource.
+            </p>
+            <a class="text-link" href="/projects/">Open the project archive</a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-tag">Template</p>
+            <h3>Reusable project page</h3>
+            <p>
+              A dedicated layout for a video with sections for overview, downloads,
+              instructions, and update notes.
+            </p>
+            <a class="text-link" href="/projects/project-template/">View the page template</a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
