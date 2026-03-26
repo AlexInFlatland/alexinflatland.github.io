@@ -36,10 +36,12 @@
           alt="${escapeHtml(video.title)} thumbnail"
         >
         <div class="project-summary-copy">
-          <p class="project-tag">${escapeHtml(video.published_label || "Video")}</p>
           <h2>${escapeHtml(video.title)}</h2>
-          <p>${escapeHtml(video.summary)}</p>
-          <span class="text-link">Open video page</span>
+          <p class="project-summary-text">${escapeHtml(video.summary)}</p>
+          <div class="project-summary-meta">
+            <p class="project-tag">${escapeHtml(video.published_label || "Video")}</p>
+            <span class="text-link">Click for more details</span>
+          </div>
         </div>
       </a>
     `;
