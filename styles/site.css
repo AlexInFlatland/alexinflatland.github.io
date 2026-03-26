@@ -69,11 +69,12 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.9rem 1.1rem;
+  padding: 0.4rem 1.05rem;
   margin-bottom: 2rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: rgba(4, 14, 26, 0.7);
+  background-color: rgba(4, 14, 26, 0.78);
+  overflow: hidden;
   backdrop-filter: blur(12px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
   position: relative;
@@ -91,25 +92,44 @@ a {
 
 .site-brand {
   display: inline-flex;
-  flex-direction: column;
-  gap: 0.1rem;
+  align-items: center;
+  gap: 0.75rem;
   color: var(--accent);
   text-decoration: none;
 }
 
+.site-brand-text {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.site-brand-logo {
+  width: 96px;
+  height: 96px;
+  flex: 0 0 auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  box-shadow: 0 0 18px rgba(46, 183, 230, 0.08);
+}
+
 .site-brand-title {
   font-family: "Fraunces", Georgia, serif;
-  font-size: 1.35rem;
+  font-size: clamp(1.7rem, 2.5vw, 2.25rem);
   font-weight: 700;
+  line-height: 1;
   letter-spacing: 0.02em;
 }
 
 .site-brand-subtitle {
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
   font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
 }
 
 .site-nav {
@@ -360,32 +380,6 @@ code {
   margin: 0;
 }
 
-.banner-frame {
-  margin-bottom: 1.5rem;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.28);
-  clip-path: polygon(
-    0 18px,
-    18px 0,
-    calc(100% - 18px) 0,
-    100% 18px,
-    100% calc(100% - 18px),
-    calc(100% - 18px) 100%,
-    18px 100%,
-    0 calc(100% - 18px)
-  );
-}
-
-.banner-art {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  filter: saturate(1.05) contrast(1.02);
-}
-
 .feature-list {
   margin: 0;
   padding-left: 1.2rem;
@@ -480,12 +474,25 @@ code {
 .project-layout article,
 .resource-card,
 .step-card,
-.note-card,
-.site-header {
+.note-card {
   background-image:
     linear-gradient(90deg, transparent calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 47px), transparent calc(100% - 47px)),
     linear-gradient(180deg, transparent calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 47px), transparent calc(100% - 47px));
   background-blend-mode: screen;
+}
+
+.site-header {
+  background-image:
+    linear-gradient(180deg, rgba(4, 14, 26, 0.54), rgba(4, 14, 26, 0.68)),
+    linear-gradient(90deg, rgba(4, 14, 26, 0.84), rgba(4, 14, 26, 0.34) 30%, rgba(4, 14, 26, 0.38) 70%, rgba(4, 14, 26, 0.8)),
+    url("/assets/media/header-signal.jpg"),
+    linear-gradient(90deg, transparent calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 47px), transparent calc(100% - 47px)),
+    linear-gradient(180deg, transparent calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 48px), rgba(119, 217, 255, 0.08) calc(100% - 47px), transparent calc(100% - 47px));
+  background-position: center, center, center, center, center;
+  background-size: auto, auto, cover, auto, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-clip: padding-box, padding-box, padding-box, padding-box, padding-box;
+  background-blend-mode: normal, normal, normal, screen, screen;
 }
 
 .project-layout {
@@ -546,6 +553,15 @@ code {
   .intro-inline-art {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .site-brand {
+    align-items: flex-start;
+  }
+
+  .site-brand-logo {
+    width: 76px;
+    height: 76px;
   }
 
   h1 {
