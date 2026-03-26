@@ -187,14 +187,14 @@ a {
   pointer-events: none;
   border: 1px solid rgba(123, 213, 255, 0.08);
   clip-path: polygon(
-    0 24px,
-    24px 0,
-    calc(100% - 24px) 0,
-    100% 24px,
-    100% calc(100% - 24px),
-    calc(100% - 24px) 100%,
-    24px 100%,
-    0 calc(100% - 24px)
+    0 12px,
+    12px 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    12px 100%,
+    0 calc(100% - 12px)
   );
 }
 
@@ -281,12 +281,10 @@ code {
   text-decoration: none;
   transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
   clip-path: polygon(
-    0 10px,
-    10px 0,
+    0 0,
     calc(100% - 10px) 0,
     100% 10px,
-    100% calc(100% - 10px),
-    calc(100% - 10px) 100%,
+    100% 100%,
     10px 100%,
     0 calc(100% - 10px)
   );
@@ -337,14 +335,14 @@ code {
     0 0 0 8px rgba(119, 217, 255, 0.04),
     0 0 40px rgba(46, 183, 230, 0.18);
   clip-path: polygon(
-    0 18px,
-    18px 0,
-    calc(100% - 18px) 0,
-    100% 18px,
-    100% calc(100% - 18px),
-    calc(100% - 18px) 100%,
-    18px 100%,
-    0 calc(100% - 18px)
+    0 12px,
+    12px 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    12px 100%,
+    0 calc(100% - 12px)
   );
 }
 
@@ -369,14 +367,14 @@ code {
   overflow: hidden;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.28);
   clip-path: polygon(
-    0 28px,
-    28px 0,
-    calc(100% - 28px) 0,
-    100% 28px,
-    100% calc(100% - 28px),
-    calc(100% - 28px) 100%,
-    28px 100%,
-    0 calc(100% - 28px)
+    0 18px,
+    18px 0,
+    calc(100% - 18px) 0,
+    100% 18px,
+    100% calc(100% - 18px),
+    calc(100% - 18px) 100%,
+    18px 100%,
+    0 calc(100% - 18px)
   );
 }
 
@@ -458,34 +456,12 @@ code {
   color: var(--muted);
   font-weight: 700;
   clip-path: polygon(
-    0 8px,
-    8px 0,
+    0 0,
     calc(100% - 8px) 0,
     100% 8px,
-    100% calc(100% - 8px),
-    calc(100% - 8px) 100%,
+    100% 100%,
     8px 100%,
     0 calc(100% - 8px)
-  );
-}
-
-.hero-copy,
-.hero-panel,
-.content-card,
-.project-card,
-.project-layout article,
-.resource-card,
-.step-card,
-.note-card {
-  clip-path: polygon(
-    0 30px,
-    30px 0,
-    calc(100% - 30px) 0,
-    100% 30px,
-    100% calc(100% - 30px),
-    calc(100% - 30px) 100%,
-    30px 100%,
-    0 calc(100% - 30px)
   );
 }
 
