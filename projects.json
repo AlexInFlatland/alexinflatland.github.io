@@ -1,0 +1,133 @@
+{
+  "videos": [
+    {
+      "video_id": "C4aY25LY3Vg",
+      "title": "How to send binary data using LASERS!!! (DIY Arduino project)",
+      "published_label": "November 07, 2021",
+      "summary": "In this video, we go over the process of setting up a sender and receiver hardware and software, so that we can send data using lasers. You can download the Arduino code used in this project here:...",
+      "image": "https://i.ytimg.com/vi/C4aY25LY3Vg/maxresdefault.jpg",
+      "video_path": "/projects/how-to-send-binary-data-using-lasers-diy-arduino-project/"
+    },
+    {
+      "video_id": "0vh8Iqmnk4w",
+      "title": "Gaming on the Samsung Galaxy Z Fold 3 - Why I'm NEVER going back to a non folding phone!",
+      "published_label": "October 26, 2021",
+      "summary": "I've been gaming and developing games on this phone for 2 months now. These are my thoughts on it from a gamer's perspective. Spoiler alert, I'm really enjoying it! P.S. How crazy would it be if someone actually...",
+      "image": "https://i.ytimg.com/vi/0vh8Iqmnk4w/maxresdefault.jpg",
+      "video_path": "/projects/gaming-on-the-samsung-galaxy-z-fold-3-why-i-m-never-going-back-to-a-non-folding-phone/"
+    },
+    {
+      "video_id": "8Z0-s5L49Q4",
+      "title": "How to make a SCREAMING PUMPKIN for Halloween to scare your unsuspecting neighbors!",
+      "published_label": "October 17, 2021",
+      "summary": "A simple DIY project using an Arduino and an Adafruit Music Shield that will have you make a screaming pumpkin for Halloween, and hopefully get a few jump scares out of your unsuspecting neighbors. You can find the...",
+      "image": "https://i.ytimg.com/vi/8Z0-s5L49Q4/maxresdefault.jpg",
+      "video_path": "/projects/how-to-make-a-screaming-pumpkin-for-halloween-to-scare-your-unsuspecting-neighbors/"
+    },
+    {
+      "video_id": "aE_8u2wtIOI",
+      "title": "How to replace the battery on a Fitbit Alta HR",
+      "published_label": "September 19, 2020",
+      "summary": "In this video I show you how to replace the battery on a Fitbit Alta HR. You can purchase a replacement battery and tools required here: https://amzn.to/3Gd4L2x I also have a video on the Fitbit Alta:...",
+      "image": "https://i.ytimg.com/vi/aE_8u2wtIOI/maxresdefault.jpg",
+      "video_path": "/projects/how-to-replace-the-battery-on-a-fitbit-alta-hr/"
+    },
+    {
+      "video_id": "0S7DPmuc3Gc",
+      "title": "diuBIT.com is a SCAM!!!",
+      "published_label": "September 15, 2020",
+      "summary": "diuBIT.com is a SCAM! You DIDN'T win any crypto! Don't give them any money!",
+      "image": "https://i.ytimg.com/vi/0S7DPmuc3Gc/maxresdefault.jpg",
+      "video_path": "/projects/diubit-com-is-a-scam/"
+    },
+    {
+      "video_id": "jVEpZXqDALM",
+      "title": "Microsoft Flight Simulator 2020 Multiple Monitor Setup Problem and Solution (Game Dev Perspective)",
+      "published_label": "August 27, 2020",
+      "summary": "In this video, we're going to take a look at what's the problem with setting up multiple monitors in Microsoft Flight Simulator 2020 and how we can solve that problem. I also go deeper and explain what I believe the...",
+      "image": "https://i.ytimg.com/vi/jVEpZXqDALM/maxresdefault.jpg",
+      "video_path": "/projects/microsoft-flight-simulator-2020-multiple-monitor-setup-problem-and-solution-game-dev-perspective/"
+    },
+    {
+      "video_id": "fzZ2TR_mwgs",
+      "title": "Running an Arduino on a breadboard with NO EXTERNAL COMPONENTS / How to FLASH an Arduino BOOTLOADER",
+      "published_label": "August 09, 2020",
+      "summary": "In this video, we discuss how to run an Arduino on a breadboard with no external components, and how to flash an Arduino bootloader onto an ATmega chip. Bootloader files per IDE version: 1.6.x+ -...",
+      "image": "https://i.ytimg.com/vi/fzZ2TR_mwgs/maxresdefault.jpg",
+      "video_path": "/projects/running-an-arduino-on-a-breadboard-with-no-external-components-how-to-flash-an-arduino-bootloader/"
+    },
+    {
+      "video_id": "qlYYptyx54Q",
+      "title": "How to run an Arduino ATmega328P on a Breadboard and How to Program it using a USB to Serial Adapter",
+      "published_label": "August 09, 2020",
+      "summary": "In this video we discuss how to run an Arduino on a breadboard, and how to program it using a USB to Serial Adapter. How to program an Arduino on a breadboard using a USB to Serial Adapter: 23:40 How to run an Arduino...",
+      "image": "https://i.ytimg.com/vi/qlYYptyx54Q/maxresdefault.jpg",
+      "video_path": "/projects/how-to-run-an-arduino-atmega328p-on-a-breadboard-and-how-to-program-it-using-a-usb-to-serial-adapter/"
+    },
+    {
+      "video_id": "3S8O6g1ABR8",
+      "title": "How to Fix ERROR CODE 0x97 on EPSON Printer / How To Clean EPSON Printer Head",
+      "published_label": "July 21, 2020",
+      "summary": "In this video I explore 3 different approaches to fixing EPSON Error Code 0x97 that's primarily caused by a clogged printer head. One of the approaches involves manually cleaning your EPSON printer head.",
+      "image": "https://i.ytimg.com/vi/3S8O6g1ABR8/maxresdefault.jpg",
+      "video_path": "/projects/how-to-fix-error-code-0x97-on-epson-printer-how-to-clean-epson-printer-head/"
+    },
+    {
+      "video_id": "5ECs_vvbSe0",
+      "title": "How to replace the battery on a Fitbit Alta",
+      "published_label": "July 02, 2020",
+      "summary": "In this video I show you how to replace the battery on a Fitbit Alta. I also have a video on the Fitbit Alta HR: https://youtu.be/aE_8u2wtIOI You can purchase a replacement battery and tools required here:...",
+      "image": "https://i.ytimg.com/vi/5ECs_vvbSe0/maxresdefault.jpg",
+      "video_path": "/projects/how-to-replace-the-battery-on-a-fitbit-alta/"
+    },
+    {
+      "video_id": "2jhTEAkjlpY",
+      "title": "How to DISABLE the data WRITE PROTECTION on an EEPROM chip (using an Arduino or a programmer)",
+      "published_label": "June 02, 2020",
+      "summary": "In this video I'll walk you to how the data/write protection works in EEPROM chips, and how you can disable it using an Arduino DIY programmer or a commercial programmer. Timestamps: 0:00 - Data protection problem...",
+      "image": "https://i.ytimg.com/vi/2jhTEAkjlpY/maxresdefault.jpg",
+      "video_path": "/projects/how-to-disable-the-data-write-protection-on-an-eeprom-chip-using-an-arduino-or-a-programmer/"
+    },
+    {
+      "video_id": "ZgQHeBInRlw",
+      "title": "How to replace the battery on a Fitbit Blaze (fixes overheating issue)",
+      "published_label": "May 28, 2020",
+      "summary": "In this video I show you how to replace the battery on a Fitbit Blaze. This also fixed an issue I had where my Fitbit would overheat while charging. You can purchase a replacement battery here: Battery with tools:...",
+      "image": "https://i.ytimg.com/vi/ZgQHeBInRlw/maxresdefault.jpg",
+      "video_path": "/projects/how-to-replace-the-battery-on-a-fitbit-blaze-fixes-overheating-issue/"
+    },
+    {
+      "video_id": "n9T7ov39cmI",
+      "title": "BarTop Arcade Cabinet running MAME32 - The Making Of",
+      "published_label": "June 11, 2014",
+      "summary": "Here's my take on making myself a bar-top arcade cabinet. All it's missing is the final housing :) You can find more details about the build on my blog, located here: http://alexinflatland.com/bartop-arcade-cabinet-...",
+      "image": "https://i.ytimg.com/vi/n9T7ov39cmI/maxresdefault.jpg",
+      "video_path": "/projects/bartop-arcade-cabinet-running-mame32-the-making-of/"
+    },
+    {
+      "video_id": "eY7hiALKnTo",
+      "title": "M&M Sorting using OpenCV and Arduino - Part 2",
+      "published_label": "May 23, 2013",
+      "summary": "This is part 2 of my M&M sorter project. Here you can see how it actually functions. For a more detailed explanation on how it's built, check out part 1 here: http://youtu.be/wAQINPSFfOg For more details and the code...",
+      "image": "https://i.ytimg.com/vi/eY7hiALKnTo/maxresdefault.jpg",
+      "video_path": "/projects/m-m-sorting-using-opencv-and-arduino-part-2/"
+    },
+    {
+      "video_id": "wAQINPSFfOg",
+      "title": "M&M Sorting using OpenCV and Arduino - Part 1",
+      "published_label": "May 23, 2013",
+      "summary": "This is an M&M sorter that I designed and built using some spare parts from an old printer, an Arduino, a webcam and OpenCV. This particular video is part 1 and shows how the project is built and how its sub-parts...",
+      "image": "https://i.ytimg.com/vi/wAQINPSFfOg/maxresdefault.jpg",
+      "video_path": "/projects/m-m-sorting-using-opencv-and-arduino-part-1/"
+    },
+    {
+      "video_id": "O6j02lN5gDw",
+      "title": "Tracking a ball and rotating camera with OpenCV and Arduino",
+      "published_label": "May 16, 2013",
+      "summary": "This is a little project I built using OpenCV and an Arduino Uno. OpenCV tracks a ball, and the Arduino controls a servo motor to rotate the camera in case the ball goes off-screen. That way you get a tracking range...",
+      "image": "https://i.ytimg.com/vi/O6j02lN5gDw/maxresdefault.jpg",
+      "video_path": "/projects/tracking-a-ball-and-rotating-camera-with-opencv-and-arduino/"
+    }
+  ],
+  "batch_size": 5
+}

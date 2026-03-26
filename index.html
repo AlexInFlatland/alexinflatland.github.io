@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-video-feed="/projects.json" data-initial-count="5" data-batch-size="5">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex in Flatland</title>
   <meta
     name="description"
-    content="Projects, downloads, and build notes from the Alex in Flatland YouTube channel."
+    content="Video pages, downloads, and notes from the Alex in Flatland YouTube channel."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,8 @@
     rel="stylesheet"
   >
   <link rel="icon" type="image/png" href="/assets/media/mark-primary.png">
-  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="/styles/site.css">
+  <script src="/scripts/projects-feed.js" defer></script>
 </head>
 <body>
   <div class="page-shell">
@@ -32,102 +33,118 @@
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="/projects/">Projects</a>
+        <a href="/">Home</a>
         <a href="https://www.youtube.com/@AlexInFlatland">YouTube</a>
         <a href="https://github.com/AlexInFlatland">GitHub</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Builds, experiments, and downloads</p>
-          <h1>Every video can have a home base.</h1>
-          <p class="hero-text">
-            This site is the companion to the Alex in Flatland channel: a clean place
-            for project writeups, related files, setup steps, and the links that are
-            hard to fit neatly into a YouTube description.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="/projects/">Browse Projects</a>
-            <a class="button button-secondary" href="https://www.youtube.com/@AlexInFlatland">
-              Visit the Channel
-            </a>
+      <section class="page-intro project-index-intro">
+        <p>
+          Welcome, traveler! This website is a collection of information and downloads
+          related to the YouTube videos on my channel,
+          <a class="text-link" href="https://www.youtube.com/@AlexInFlatland">Alex in Flatland</a>.
+          If you're
+          looking for project data, you're in the right place. And if you randomly
+          wandered over here, feel free to browse around. You may just find something
+          interesting.
+        </p>
+        <div class="intro-inline-art">
+          <div class="inline-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-video-status>Showing 5 of 16 videos - scroll down for more</span>
           </div>
         </div>
+      </section>
 
-        <aside class="hero-panel">
-          <div class="brand-lockup">
-            <div>
-              <p class="panel-label">Channel identity</p>
-              <p class="panel-text">
-                Dark-space visuals, glowing data interfaces, and a little bit of
-                engineered wonder.
-              </p>
+      <section class="project-list" aria-label="Videos" data-video-list>
+        <article class="project-summary-card">
+          <a class="project-summary-link" href="/projects/how-to-send-binary-data-using-lasers-diy-arduino-project/">
+            <img
+              class="project-summary-image"
+              src="https://i.ytimg.com/vi/C4aY25LY3Vg/maxresdefault.jpg"
+              alt="How to send binary data using LASERS!!! (DIY Arduino project) thumbnail"
+            >
+            <div class="project-summary-copy">
+              <p class="project-tag">November 07, 2021</p>
+              <h2>How to send binary data using LASERS!!! (DIY Arduino project)</h2>
+              <p>In this video, we go over the process of setting up a sender and receiver hardware and software, so that we can send data using lasers. You can download the Arduino code used in this project here:...</p>
+              <span class="text-link">Open video page</span>
             </div>
-          </div>
-
-          <p class="panel-label">Why this site exists</p>
-          <ul class="feature-list">
-            <li>Dedicated page per video or build</li>
-            <li>Downloads, source files, and reference links</li>
-            <li>Setup instructions that are easy to update later</li>
-            <li>A structure that works well on GitHub Pages</li>
-          </ul>
-        </aside>
-
-      </section>
-
-      <section class="section-grid" id="about">
-        <article class="content-card">
-          <p class="section-label">Channel</p>
-          <h2>From video to usable project page</h2>
-          <p>
-            Instead of keeping everything inside video descriptions, each project can
-            live here with a short overview, installation steps, part lists, code,
-            downloads, and update notes.
-          </p>
+          </a>
         </article>
-
-        <article class="content-card accent-card">
-          <p class="section-label">System design</p>
-          <h2>Built like a project control panel</h2>
-          <p>
-            The visual language now follows your branding more closely: dark surfaces,
-            instrument-panel cards, bright signal lines, and a reusable page structure
-            for code, files, diagrams, and technical notes.
-          </p>
+        <article class="project-summary-card">
+          <a class="project-summary-link" href="/projects/gaming-on-the-samsung-galaxy-z-fold-3-why-i-m-never-going-back-to-a-non-folding-phone/">
+            <img
+              class="project-summary-image"
+              src="https://i.ytimg.com/vi/0vh8Iqmnk4w/maxresdefault.jpg"
+              alt="Gaming on the Samsung Galaxy Z Fold 3 - Why I&#x27;m NEVER going back to a non folding phone! thumbnail"
+            >
+            <div class="project-summary-copy">
+              <p class="project-tag">October 26, 2021</p>
+              <h2>Gaming on the Samsung Galaxy Z Fold 3 - Why I&#x27;m NEVER going back to a non folding phone!</h2>
+              <p>I&#x27;ve been gaming and developing games on this phone for 2 months now. These are my thoughts on it from a gamer&#x27;s perspective. Spoiler alert, I&#x27;m really enjoying it! P.S. How crazy would it be if someone actually...</p>
+              <span class="text-link">Open video page</span>
+            </div>
+          </a>
+        </article>
+        <article class="project-summary-card">
+          <a class="project-summary-link" href="/projects/how-to-make-a-screaming-pumpkin-for-halloween-to-scare-your-unsuspecting-neighbors/">
+            <img
+              class="project-summary-image"
+              src="https://i.ytimg.com/vi/8Z0-s5L49Q4/maxresdefault.jpg"
+              alt="How to make a SCREAMING PUMPKIN for Halloween to scare your unsuspecting neighbors! thumbnail"
+            >
+            <div class="project-summary-copy">
+              <p class="project-tag">October 17, 2021</p>
+              <h2>How to make a SCREAMING PUMPKIN for Halloween to scare your unsuspecting neighbors!</h2>
+              <p>A simple DIY project using an Arduino and an Adafruit Music Shield that will have you make a screaming pumpkin for Halloween, and hopefully get a few jump scares out of your unsuspecting neighbors. You can find the...</p>
+              <span class="text-link">Open video page</span>
+            </div>
+          </a>
+        </article>
+        <article class="project-summary-card">
+          <a class="project-summary-link" href="/projects/how-to-replace-the-battery-on-a-fitbit-alta-hr/">
+            <img
+              class="project-summary-image"
+              src="https://i.ytimg.com/vi/aE_8u2wtIOI/maxresdefault.jpg"
+              alt="How to replace the battery on a Fitbit Alta HR thumbnail"
+            >
+            <div class="project-summary-copy">
+              <p class="project-tag">September 19, 2020</p>
+              <h2>How to replace the battery on a Fitbit Alta HR</h2>
+              <p>In this video I show you how to replace the battery on a Fitbit Alta HR. You can purchase a replacement battery and tools required here: https://amzn.to/3Gd4L2x I also have a video on the Fitbit Alta:...</p>
+              <span class="text-link">Open video page</span>
+            </div>
+          </a>
+        </article>
+        <article class="project-summary-card">
+          <a class="project-summary-link" href="/projects/diubit-com-is-a-scam/">
+            <img
+              class="project-summary-image"
+              src="https://i.ytimg.com/vi/0S7DPmuc3Gc/maxresdefault.jpg"
+              alt="diuBIT.com is a SCAM!!! thumbnail"
+            >
+            <div class="project-summary-copy">
+              <p class="project-tag">September 15, 2020</p>
+              <h2>diuBIT.com is a SCAM!!!</h2>
+              <p>diuBIT.com is a SCAM! You DIDN&#x27;T win any crypto! Don&#x27;t give them any money!</p>
+              <span class="text-link">Open video page</span>
+            </div>
+          </a>
         </article>
       </section>
 
-      <section class="section-block">
-        <div class="section-heading">
-          <p class="section-label">Projects</p>
-          <h2>Start with a hub, then grow one page at a time</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <p class="project-tag">Hub</p>
-            <h3>Project archive</h3>
-            <p>
-              A single place to list every build, experiment, and downloadable resource.
-            </p>
-            <a class="text-link" href="/projects/">Open the project archive</a>
-          </article>
-
-          <article class="project-card">
-            <p class="project-tag">Template</p>
-            <h3>Reusable project page</h3>
-            <p>
-              A dedicated layout for a video with sections for overview, downloads,
-              instructions, and update notes.
-            </p>
-            <a class="text-link" href="/projects/project-template/">View the page template</a>
-          </article>
-        </div>
-      </section>
+      <div class="project-feed-controls">
+        <button class="button button-primary load-more-button" type="button" data-load-more>
+          Load more videos
+        </button>
+        <p class="project-feed-end" data-video-end hidden>
+          You've reached the end. There are no more videos to load.
+        </p>
+      </div>
+      <div class="project-feed-sentinel" data-video-sentinel aria-hidden="true"></div>
     </main>
   </div>
 </body>
