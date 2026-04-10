@@ -44,18 +44,33 @@ body {
     radial-gradient(circle at 50% 120%, rgba(241, 196, 15, 0.08), transparent 26%),
     linear-gradient(180deg, #02060c 0%, #07101b 40%, #091322 100%);
   position: relative;
+  isolation: isolate;
 }
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
+  z-index: -2;
   pointer-events: none;
-  background-image:
-    linear-gradient(rgba(119, 217, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(119, 217, 255, 0.045) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 92%);
+  opacity: 0.42;
+  background-image: url("/assets/media/circuit-board.svg");
+  background-size: 640px 640px;
+  background-position: center top;
+  background-repeat: repeat;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.46) 72%, transparent 98%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(46, 183, 230, 0.16), transparent 24%),
+    radial-gradient(circle at 82% 20%, rgba(119, 217, 255, 0.12), transparent 22%),
+    linear-gradient(180deg, rgba(2, 6, 12, 0.4), rgba(2, 6, 12, 0.72) 62%, rgba(2, 6, 12, 0.92));
 }
 
 a {
@@ -63,6 +78,8 @@ a {
 }
 
 .page-shell {
+  position: relative;
+  z-index: 1;
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;
   padding: 1.25rem 0 3rem;
@@ -762,6 +779,38 @@ code {
 
 .footer-space {
   height: 1rem;
+}
+
+.error-panel {
+  padding: clamp(2rem, 5vw, 3rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(180deg, rgba(8, 27, 46, 0.86), rgba(5, 15, 28, 0.9)),
+    var(--surface);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+}
+
+.error-code {
+  margin-bottom: 1rem;
+  color: var(--highlight);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.error-panel h1 {
+  white-space: nowrap;
+  font-size: clamp(1.8rem, 3.8vw, 3.3rem);
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
 }
 
 @media (max-width: 860px) {
