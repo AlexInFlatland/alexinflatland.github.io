@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,7 @@
   <title>I Built the Eridian Clock from Project Hail Mary | Alex in Flatland</title>
   <meta
     name="description"
-    content="Eridian Clock Giveaway here: https://gleam.io/DLY7y/eridian-clock Project Parts: Digital watch: ATTiny85 chip - https://amzn.to/3PYMJdI SSD1306 OLED screen - https://amzn.to/4speklY On/Off Switch - https://amzn.to/4c735II Charging Connector - https://amzn.to/4dAwMUS Battery and charger - https://amzn.to/4cacTSb Resistor pack - https://amzn.to/4t5TWri Analog clock: Prototype Boards - https://amzn.to/3PXPdcn Stepper motor and driver board - https://amzn.to/41PmLvU USB-C breakout board - https://amzn.to/47OCtuR ATTiny85 chip - https://amzn.to/3PYMJdI Capacitor kit - https://amzn.to/4ctHSdg PLA safe grease - https://amzn.to/4sn4iSj Optional Parts: Arduino Uno - https://amzn.to/4e9XzYl Large Breadboard - https://amzn.to/4txhQvp Small Breadboard - https://amzn.to/48yUptv Breadboard Wires - https://amzn.to/4t1foxx Tools: Soldering Iron - https://amzn.to/3PUVdme Solder - https://amzn.to/4c2HfWA Desoldering Tool - https://amzn.to/3QrxDNW Wire Cutters - https://amzn.to/3OfMpGS Wire stripper 1 - https://amzn.to/41PkjWe Wire stripper 2 - https://amzn.to/4sjdc3e Wire crimper - https://amzn.to/48iTFZs Flexible wire - https://amzn.to/47LlnOl Electrical tape - https://amzn.to/4ef593Q Needle Nose Pliers - https://amzn.to/4tEEZw9 Glue - https://amzn.to/4ea00Kt Utility knife - https://amzn.to/4mgwjcT File set - https://amzn.to/4e4guUs Working on uploading all the necessary project files now. Check back in a bit."
+    content="To celebrate Project Hail Mary, I built two Eridian-inspired clocks based on the version described in the book: a digital wristwatch and a larger analog clock. This video is an overview of the design, fabrication, electronics, and assembly process behind both builds, along with the lessons learned while turning a fictional alien timepiece into a real project."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2710890125415618"
      crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="hail-mary-page">
   <div class="page-shell">
     <header class="site-header">
       <a class="site-brand" href="/">
@@ -57,7 +57,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <p>Eridian Clock Giveaway here: https://gleam.io/DLY7y/eridian-clock Project Parts: Digital watch: ATTiny85 chip - https://amzn.to/3PYMJdI SSD1306 OLED screen - https://amzn.to/4speklY On/Off Switch - https://amzn.to/4c735II Charging Connector - https://amzn.to/4dAwMUS Battery and charger - https://amzn.to/4cacTSb Resistor pack - https://amzn.to/4t5TWri Analog clock: Prototype Boards - https://amzn.to/3PXPdcn Stepper motor and driver board - https://amzn.to/41PmLvU USB-C breakout board - https://amzn.to/47OCtuR ATTiny85 chip - https://amzn.to/3PYMJdI Capacitor kit - https://amzn.to/4ctHSdg PLA safe grease - https://amzn.to/4sn4iSj Optional Parts: Arduino Uno - https://amzn.to/4e9XzYl Large Breadboard - https://amzn.to/4txhQvp Small Breadboard - https://amzn.to/48yUptv Breadboard Wires - https://amzn.to/4t1foxx Tools: Soldering Iron - https://amzn.to/3PUVdme Solder - https://amzn.to/4c2HfWA Desoldering Tool - https://amzn.to/3QrxDNW Wire Cutters - https://amzn.to/3OfMpGS Wire stripper 1 - https://amzn.to/41PkjWe Wire stripper 2 - https://amzn.to/4sjdc3e Wire crimper - https://amzn.to/48iTFZs Flexible wire - https://amzn.to/47LlnOl Electrical tape - https://amzn.to/4ef593Q Needle Nose Pliers - https://amzn.to/4tEEZw9 Glue - https://amzn.to/4ea00Kt Utility knife - https://amzn.to/4mgwjcT File set - https://amzn.to/4e4guUs Working on uploading all the necessary project files now. Check back in a bit.</p>
+        <p>To celebrate <em>Project Hail Mary</em>, I built two Eridian-inspired clocks based on the version described in the book: a compact digital wristwatch and a larger analog clock. In this video, I walk through the overall design, the custom 3D-printed parts, the electronics, and the assembly process behind both builds, along with some of the lessons learned while turning a fictional piece of alien technology into a real working project.</p>
       </section>
 
       <section class="project-layout">
@@ -66,26 +66,61 @@
           <ul class="resource-list">
                 <li><a class="text-link" href="https://gleam.io/DLY7y/eridian-clock" target="_blank" rel="noreferrer noopener">Eridian Clock Giveaway here</a></li>
           </ul>
+          <h3 class="resource-subgroup-title">DIGITAL WATCH</h3>
+          <ul class="resource-list">
+                <li><a class="text-link" href="https://github.com/AlexInFlatland/EridianClock/blob/main/DigitalEridianClock/DigitalEridianClock.ino" target="_blank" rel="noreferrer noopener">Digital Watch Code</a></li>
+                <li><a class="text-link" href="https://github.com/AlexInFlatland/EridianClock/tree/main/DigitalEridianClock/3DPrintFiles" target="_blank" rel="noreferrer noopener">3D Print Files</a></li>
+                <li><a class="text-link" href="https://javl.github.io/image2cpp/" target="_blank" rel="noreferrer noopener">OLED Glyph Generator</a></li>
+          </ul>
+          <h3 class="resource-subgroup-title">ANALOG WATCH</h3>
+          <ul class="resource-list">
+                <li><a class="text-link" href="https://github.com/AlexInFlatland/EridianClock/blob/main/AnalogEridianClock/AnalogEridianClock.ino" target="_blank" rel="noreferrer noopener">Analog Watch Code</a></li>
+                <li><a class="text-link" href="https://github.com/AlexInFlatland/EridianClock/tree/main/AnalogEridianClock/3DPrintFiles" target="_blank" rel="noreferrer noopener">3D Print Files</a></li>
+          </ul>
+          <h3 class="resource-subgroup-title">ATTINY BOARD URLS</h3>
+          <ul class="resource-list">
+                <li><a class="text-link" href="http://drazzy.com/package_drazzy.com_index.json" target="_blank" rel="noreferrer noopener">ATTinyCore</a></li>
+                <li><a class="text-link" href="https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json" target="_blank" rel="noreferrer noopener">attiny</a></li>
+          </ul>
         </section>
 
         <section class="resource-card">
           <p class="project-tag">Parts</p>
-          <ul class="resource-list">
+          <div class="resource-group">
+            <h3 class="resource-subgroup-title">DIGITAL WATCH</h3>
+            <ul class="resource-list">
                 <li><a class="text-link" href="https://amzn.to/3PYMJdI" target="_blank" rel="noreferrer noopener">ATTiny85 chip</a></li>
                 <li><a class="text-link" href="https://amzn.to/4speklY" target="_blank" rel="noreferrer noopener">SSD1306 OLED screen</a></li>
                 <li><a class="text-link" href="https://amzn.to/4c735II" target="_blank" rel="noreferrer noopener">On/Off Switch</a></li>
                 <li><a class="text-link" href="https://amzn.to/4dAwMUS" target="_blank" rel="noreferrer noopener">Charging Connector</a></li>
                 <li><a class="text-link" href="https://amzn.to/4cacTSb" target="_blank" rel="noreferrer noopener">Battery and charger</a></li>
                 <li><a class="text-link" href="https://amzn.to/4t5TWri" target="_blank" rel="noreferrer noopener">Resistor pack</a></li>
+            </ul>
+
+            <h3 class="resource-subgroup-title">ANALOG WATCH</h3>
+            <ul class="resource-list">
                 <li><a class="text-link" href="https://amzn.to/3PXPdcn" target="_blank" rel="noreferrer noopener">Prototype Boards</a></li>
                 <li><a class="text-link" href="https://amzn.to/41PmLvU" target="_blank" rel="noreferrer noopener">Stepper motor and driver board</a></li>
                 <li><a class="text-link" href="https://amzn.to/47OCtuR" target="_blank" rel="noreferrer noopener">USB-C breakout board</a></li>
+                <li><a class="text-link" href="https://amzn.to/3PYMJdI" target="_blank" rel="noreferrer noopener">ATTiny85 chip</a></li>
                 <li><a class="text-link" href="https://amzn.to/4ctHSdg" target="_blank" rel="noreferrer noopener">Capacitor kit</a></li>
                 <li><a class="text-link" href="https://amzn.to/4sn4iSj" target="_blank" rel="noreferrer noopener">PLA safe grease</a></li>
+            </ul>
+          </div>
+
+          <div class="resource-group">
+            <h2 class="resource-group-title">Optional Parts</h2>
+            <ul class="resource-list">
                 <li><a class="text-link" href="https://amzn.to/4e9XzYl" target="_blank" rel="noreferrer noopener">Arduino Uno</a></li>
                 <li><a class="text-link" href="https://amzn.to/4txhQvp" target="_blank" rel="noreferrer noopener">Large Breadboard</a></li>
                 <li><a class="text-link" href="https://amzn.to/48yUptv" target="_blank" rel="noreferrer noopener">Small Breadboard</a></li>
                 <li><a class="text-link" href="https://amzn.to/4t1foxx" target="_blank" rel="noreferrer noopener">Breadboard Wires</a></li>
+            </ul>
+          </div>
+
+          <div class="resource-group">
+            <h2 class="resource-group-title">Tools</h2>
+            <ul class="resource-list">
                 <li><a class="text-link" href="https://amzn.to/3PUVdme" target="_blank" rel="noreferrer noopener">Soldering Iron</a></li>
                 <li><a class="text-link" href="https://amzn.to/4c2HfWA" target="_blank" rel="noreferrer noopener">Solder</a></li>
                 <li><a class="text-link" href="https://amzn.to/3QrxDNW" target="_blank" rel="noreferrer noopener">Desoldering Tool</a></li>
@@ -99,12 +134,13 @@
                 <li><a class="text-link" href="https://amzn.to/4ea00Kt" target="_blank" rel="noreferrer noopener">Glue</a></li>
                 <li><a class="text-link" href="https://amzn.to/4mgwjcT" target="_blank" rel="noreferrer noopener">Utility knife</a></li>
                 <li><a class="text-link" href="https://amzn.to/4e4guUs" target="_blank" rel="noreferrer noopener">File set</a></li>
-          </ul>
+            </ul>
+          </div>
         </section>
       </section>
-
       <div class="footer-space" aria-hidden="true"></div>
     </main>
   </div>
 </body>
 </html>
+
