@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,7 @@
   <title>How to send binary data using LASERS!!! (DIY Arduino project) | Alex in Flatland</title>
   <meta
     name="description"
-    content="In this video, we go over the process of setting up a sender and receiver hardware and software, so that we can send data using lasers. You can download the Arduino code used in this project here: https://alexinflatland.com/how-to-send-binary-data-using-lasers/ And here’s a list of the components used and where you can find them: Laser pointers – https://amzn.to/3ws8xAQ Arduino nano – https://amzn.to/3opEgz1 Alligator clips – https://amzn.to/3wo25uy Header strips – https://amzn.to/3o6veGS Breadboards – https://amzn.to/3wrwOH5 Breadboard wires – https://amzn.to/3kfDvao Battery holders – https://amzn.to/3qvRU6n 2N3904 NPN transistors – https://amzn.to/3wtK51J Photo-resistors – https://amzn.to/3o1TwBM 10 KΩ Resistors – https://amzn.to/3wxO8KE"
+    content="In this video, we go over the process of setting up a sender and receiver hardware and software, so that we can send data using lasers. You can download the Arduino code used in this project here: https://alexinflatland.com/how-to-send-binary-data-using-lasers/ And hereâ€™s a list of the components used and where you can find them: Laser pointers â€“ https://amzn.to/3ws8xAQ Arduino nano â€“ https://amzn.to/3opEgz1 Alligator clips â€“ https://amzn.to/3wo25uy Header strips â€“ https://amzn.to/3o6veGS Breadboards â€“ https://amzn.to/3wrwOH5 Breadboard wires â€“ https://amzn.to/3kfDvao Battery holders â€“ https://amzn.to/3qvRU6n 2N3904 NPN transistors â€“ https://amzn.to/3wtK51J Photo-resistors â€“ https://amzn.to/3o1TwBM 10 KÎ© Resistors â€“ https://amzn.to/3wxO8KE"
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,29 +16,13 @@
   >
   <link rel="icon" type="image/png" href="/assets/media/mark-primary.png">
   <link rel="stylesheet" href="/styles/site.css">
+  <script src="/scripts/site-header.js" defer></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2710890125415618"
      crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="page-shell">
-    <header class="site-header">
-      <a class="site-brand" href="/">
-        <img
-          class="site-brand-logo"
-          src="/assets/media/mark-primary.png"
-          alt="Alex in Flatland logo"
-        >
-        <span class="site-brand-text">
-          <span class="site-brand-title">Alex in Flatland</span>
-          <span class="site-brand-subtitle">Like Alice in Wonderland, only better.</span>
-        </span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="/">Home</a>
-        <a href="https://www.youtube.com/@AlexInFlatland" target="_blank" rel="noreferrer noopener">YouTube</a>
-        <a href="https://github.com/AlexInFlatland" target="_blank" rel="noreferrer noopener">GitHub</a>
-      </nav>
-    </header>
+    <div data-site-header></div>
 
     <main>
       <section class="page-intro">
@@ -57,7 +41,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <p>In this video, we go over the process of setting up a sender and receiver hardware and software, so that we can send data using lasers. You can download the Arduino code used in this project here: https://alexinflatland.com/how-to-send-binary-data-using-lasers/ And here’s a list of the components used and where you can find them: Laser pointers – https://amzn.to/3ws8xAQ Arduino nano – https://amzn.to/3opEgz1 Alligator clips – https://amzn.to/3wo25uy Header strips – https://amzn.to/3o6veGS Breadboards – https://amzn.to/3wrwOH5 Breadboard wires – https://amzn.to/3kfDvao Battery holders – https://amzn.to/3qvRU6n 2N3904 NPN transistors – https://amzn.to/3wtK51J Photo-resistors – https://amzn.to/3o1TwBM 10 KΩ Resistors – https://amzn.to/3wxO8KE</p>
+        <p>In this video, we go over the process of setting up a sender and receiver hardware and software, so that we can send data using lasers. You can download the Arduino code used in this project here: https://alexinflatland.com/how-to-send-binary-data-using-lasers/ And hereâ€™s a list of the components used and where you can find them: Laser pointers â€“ https://amzn.to/3ws8xAQ Arduino nano â€“ https://amzn.to/3opEgz1 Alligator clips â€“ https://amzn.to/3wo25uy Header strips â€“ https://amzn.to/3o6veGS Breadboards â€“ https://amzn.to/3wrwOH5 Breadboard wires â€“ https://amzn.to/3kfDvao Battery holders â€“ https://amzn.to/3qvRU6n 2N3904 NPN transistors â€“ https://amzn.to/3wtK51J Photo-resistors â€“ https://amzn.to/3o1TwBM 10 KÎ© Resistors â€“ https://amzn.to/3wxO8KE</p>
       </section>
 
       <section class="project-layout">
@@ -80,7 +64,7 @@
                 <li><a class="text-link" href="https://amzn.to/3qvRU6n" target="_blank" rel="noreferrer noopener">Battery holders</a></li>
                 <li><a class="text-link" href="https://amzn.to/3wtK51J" target="_blank" rel="noreferrer noopener">2N3904 NPN transistors</a></li>
                 <li><a class="text-link" href="https://amzn.to/3o1TwBM" target="_blank" rel="noreferrer noopener">Photo-resistors</a></li>
-                <li><a class="text-link" href="https://amzn.to/3wxO8KE" target="_blank" rel="noreferrer noopener">10 KΩ Resistors</a></li>
+                <li><a class="text-link" href="https://amzn.to/3wxO8KE" target="_blank" rel="noreferrer noopener">10 KÎ© Resistors</a></li>
           </ul>
         </section>
       </section>
@@ -90,3 +74,5 @@
   </div>
 </body>
 </html>
+
+

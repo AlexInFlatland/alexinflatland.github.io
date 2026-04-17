@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Alex in Flatland</title>
+  <meta
+    name="description"
+    content="Contact Alex in Flatland about videos, project files, questions, or collaboration ideas."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="icon" type="image/png" href="/assets/media/mark-primary.png">
+  <link rel="stylesheet" href="/styles/site.css">
+  <script src="/scripts/site-header.js" defer></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2710890125415618"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div data-site-header></div>
+
+    <main>
+      <section class="page-intro contact-intro">
+        <p class="project-tag">Contact</p>
+        <h1>Send a Signal</h1>
+        <p>
+          Have a question about a build, a file that should be added, or an idea
+          for a future video? Send a note below and it will route through the
+          contact form backend.
+        </p>
+      </section>
+
+      <section class="contact-layout">
+        <form class="contact-form resource-card" action="https://formsubmit.co/238765cd40df4a066aebff779bdf6ffe" method="POST">
+          <input type="hidden" name="_subject" value="New Alex in Flatland website message">
+          <input type="hidden" name="_url" value="https://alexinflatland.com/contact.html">
+          <input type="hidden" name="_next" value="https://alexinflatland.com/contact-success.html">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off">
+
+          <label for="contact-name">Name</label>
+          <input id="contact-name" type="text" name="name" autocomplete="name" required>
+
+          <label for="contact-email">Email</label>
+          <input id="contact-email" type="email" name="email" autocomplete="email" required>
+
+          <label for="contact-topic">Topic</label>
+          <select id="contact-topic" name="topic" required>
+            <option value="">Choose a signal path</option>
+            <option value="Project question">Project question</option>
+            <option value="Missing file or link">Missing file or link</option>
+            <option value="Collaboration">Collaboration</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="8" required></textarea>
+
+          <button class="button button-primary" type="submit">Transmit Message</button>
+        </form>
+
+        <aside class="resource-card contact-note">
+          <p class="project-tag">What Happens Next</p>
+          <h2>First submission check</h2>
+          <p>
+            FormSubmit may send a confirmation email the first time this form is
+            used. After that confirmation, messages should arrive directly in the
+            configured inbox.
+          </p>
+          <p class="tiny-note">
+            This form is static-site friendly, so it works on GitHub Pages without
+            adding a backend server.
+          </p>
+        </aside>
+      </section>
+
+      <div class="footer-space" aria-hidden="true"></div>
+    </main>
+  </div>
+</body>
+</html>
+
