@@ -1107,3 +1107,32 @@ code {
     max-width: none;
   }
 }
+
+/* Hand-written build notes on a video page (e.g. BarTop Arcade). */
+.writeup-card h2 {
+  margin: 0.4rem 0 1rem;
+}
+
+.writeup-card h3 {
+  margin: 1.6rem 0 0.5rem;
+}
+
+.writeup-card blockquote {
+  margin: 1rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+}
+
+.writeup-figure {
+  margin: 1.25rem 0;
+}
+
+.writeup-figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  background: #fff;
+}
